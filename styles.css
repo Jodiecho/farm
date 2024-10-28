@@ -56,9 +56,70 @@ table {
     --orange: #E75D02;
     --black: #000000;
     --white: #ffffff;
+    --font-heading: 'Irish Grover', cursive;
+    --font-body: 'Habibi', serif;
 }
-/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
-/*-------------------- MEDIA QUERY (large) ------------------------------------*/
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+/* -------------------- GLOBAL STYLES ------------------------------------ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+header {
+    font-family: var(--font-heading);
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.sale-items {
+    display: grid;
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+/* -------------------- MEDIA QUERIES ------------------------------------ */
+@media (min-width: 428px) {
+    .sale-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 834px) {
+    .sale-items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sale-items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sale-items {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
