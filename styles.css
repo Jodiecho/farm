@@ -61,11 +61,11 @@ table {
 }
 
 /* -------------------- GLOBAL STYLES ------------------------------------ */
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 body {
     font-family: var(--font-body);
@@ -97,6 +97,21 @@ main {
 
 figure {
     text-align: center;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
 }
 
 /* -------------------- MEDIA QUERIES ------------------------------------ */
